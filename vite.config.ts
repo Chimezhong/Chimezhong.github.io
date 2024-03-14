@@ -12,7 +12,12 @@ export default defineConfig({
   },
 
   // 静态资源基础路径 base: './' || '',
-  base: process.env.NODE_ENV === "production" ? "./" : "/",
+  base: "/vue3-demo/",
+
+  //打包输入的文件名
+  build: {
+    outDir: "docs",
+  },
 
   //指定公共静态文件的目录
   publicDir: "public",
